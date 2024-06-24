@@ -1,0 +1,14 @@
+Warning message:
+package 'optparse' was built under R version 4.2.3 
+Warning: future: Ignoring requested number of processes, because it is greater than the number of cores/child processes available (= 256) to this R process: -p 5000
+The legacy packages maptools, rgdal, and rgeos, underpinning the sp package,
+which was just loaded, will retire in October 2023.
+Please refer to R-spatial evolution reports for details, especially
+https://r-spatial.org/r/2023/05/15/evolution4.html.
+It may be desirable to make the sf package available;
+package maintainers should consider adding sf to Suggests:.
+The sp package is now running under evolution status 2
+     (status 2 uses the sf package in place of rgdal)
+Attaching SeuratObject
+Warning message:
+package 'Seurat' was built under R version 4.2.3 

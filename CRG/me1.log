@@ -1,0 +1,139 @@
+nohup: ignoring input
+Warning message:
+package 'optparse' was built under R version 4.2.3 
+Warning: future: Ignoring requested number of processes, because it is greater than the number of cores/child processes available (= 256) to this R process: -p 5000
+The legacy packages maptools, rgdal, and rgeos, underpinning the sp package,
+which was just loaded, will retire in October 2023.
+Please refer to R-spatial evolution reports for details, especially
+https://r-spatial.org/r/2023/05/15/evolution4.html.
+It may be desirable to make the sf package available;
+package maintainers should consider adding sf to Suggests:.
+The sp package is now running under evolution status 2
+     (status 2 uses the sf package in place of rgdal)
+Attaching SeuratObject
+Warning message:
+package 'Seurat' was built under R version 4.2.3 
+[1] "celltype---------------------------------------"
+
+ Ast  End  ExN  InN  Mic  Mix  OPC  Oli 
+   0    0    0    0 3744    0    0    0 
+[1] "downsample was done !"
+[1] "monocle 2"
+Loading required package: Matrix
+Loading required package: Biobase
+Loading required package: BiocGenerics
+
+Attaching package: 'BiocGenerics'
+
+The following objects are masked from 'package:stats':
+
+    IQR, mad, sd, var, xtabs
+
+The following objects are masked from 'package:base':
+
+    Filter, Find, Map, Position, Reduce, anyDuplicated, aperm, append,
+    as.data.frame, basename, cbind, colnames, dirname, do.call,
+    duplicated, eval, evalq, get, grep, grepl, intersect, is.unsorted,
+    lapply, mapply, match, mget, order, paste, pmax, pmax.int, pmin,
+    pmin.int, rank, rbind, rownames, sapply, setdiff, sort, table,
+    tapply, union, unique, unsplit, which.max, which.min
+
+Welcome to Bioconductor
+
+    Vignettes contain introductory material; view with
+    'browseVignettes()'. To cite Bioconductor, see
+    'citation("Biobase")', and for packages 'citation("pkgname")'.
+
+Loading required package: ggplot2
+Loading required package: VGAM
+Loading required package: stats4
+Loading required package: splines
+Loading required package: DDRTree
+Loading required package: irlba
+
+Attaching package: 'dplyr'
+
+The following object is masked from 'package:Biobase':
+
+    combine
+
+The following objects are masked from 'package:BiocGenerics':
+
+    combine, intersect, setdiff, union
+
+The following objects are masked from 'package:stats':
+
+    filter, lag
+
+The following objects are masked from 'package:base':
+
+    intersect, setdiff, setequal, union
+
+[1] "format data done , filter select genes "
+Removing 392 outliers
+            gene_short_name num_cells_expressed
+MIR1302-2HG     MIR1302-2HG                   0
+AL627309.1       AL627309.1                  15
+AL627309.3       AL627309.3                   0
+AL627309.5       AL627309.5                  54
+AL627309.4       AL627309.4                   0
+AP006222.2       AP006222.2                   0
+[1] "plot \357\274\201\357\274\201\357\274\201\357\274\201"
+Saving 12 x 7 in image
+Saving 12 x 7 in image
+Saving 12 x 7 in image
+Saving 12 x 7 in image
+Saving 7 x 7 in image
+Saving 7 x 7 in image
+Saving 7 x 7 in image
+Saving 7 x 7 in image
+Saving 7 x 7 in image
+Saving 7 x 7 in image
+Saving 10 x 7 in image
+Error in `palette()`:
+! Insufficient values in manual scale. 72 needed but only 40 provided.
+Backtrace:
+     x
+  1. \-global run_monocle(bb, method = opt$m, idents = opt$i, root = opt$d)
+  2.   \-ggplot2::ggsave(...)
+  3.     +-grid::grid.draw(plot)
+  4.     \-ggplot2:::grid.draw.ggplot(plot)
+  5.       +-base::print(x)
+  6.       \-ggplot2:::print.ggplot(x)
+  7.         +-ggplot2::ggplot_build(x)
+  8.         \-ggplot2:::ggplot_build.ggplot(x)
+  9.           \-base::lapply(data, scales_map_df, scales = npscales)
+ 10.             \-ggplot2 (local) FUN(X[[i]], ...)
+ 11.               +-base::unlist(...)
+ 12.               \-base::lapply(scales$scales, function(scale) scale$map_df(df = df))
+ 13.                 \-ggplot2 (local) FUN(X[[i]], ...)
+ 14.                   \-scale$map_df(df = df)
+ 15.                     \-ggplot2 (local) map_df(..., self = self)
+ 16.                       \-base::lapply(aesthetics, function(j) self$map(df[[j]]))
+ 17.                         \-ggplot2 (local) FUN(X[[i]], ...)
+ 18.                           \-self$map(df[[j]])
+ 19.                             \-ggplot2 (local) map(..., self = self)
+ 20.                               \-self$palette(n)
+ 21.                                 \-ggplot2 (local) palette(...)
+ 22.                                   \-cli::cli_abort("Insufficient values in manual scale. {n} needed but only {length(values)} provided.")
+ 23.                                     \-rlang::abort(...)
+Warning messages:
+1: package 'Matrix' was built under R version 4.2.3 
+2: package 'Biobase' was built under R version 4.2.3 
+3: package 'ggplot2' was built under R version 4.2.3 
+4: package 'irlba' was built under R version 4.2.3 
+5: package 'dplyr' was built under R version 4.2.3 
+6: `group_by_()` was deprecated in dplyr 0.7.0.
+i Please use `group_by()` instead.
+i See vignette('programming') for more help
+i The deprecated feature was likely used in the monocle package.
+  Please report the issue to the authors. 
+7: `select_()` was deprecated in dplyr 0.7.0.
+i Please use `select()` instead.
+i The deprecated feature was likely used in the monocle package.
+  Please report the issue to the authors. 
+8: In graph.dfs(dp_mst, root = root_cell, neimode = "all", unreachable = FALSE,  :
+  Argument `neimode' is deprecated; use `mode' instead
+9: In graph.dfs(dp_mst, root = root_cell, neimode = "all", unreachable = FALSE,  :
+  Argument `neimode' is deprecated; use `mode' instead
+Execution halted
