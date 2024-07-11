@@ -1,0 +1,10 @@
+ENTREZID NCBI_url Locustag
+LOC4329526 https://www.ncbi.nlm.nih.gov/gene/?term=LOC4329526 LOC_Os02g32590
+LOC107280441 https://www.ncbi.nlm.nih.gov/gene/?term=LOC107280441 NA
+LOC107280587 https://www.ncbi.nlm.nih.gov/gene/?term=LOC107280587 NA
+LOC107276953 https://www.ncbi.nlm.nih.gov/gene/?term=LOC107276953 NA
+LOC107276810 https://www.ncbi.nlm.nih.gov/gene/?term=LOC107276810 NA
+LOC112938214 https://www.ncbi.nlm.nih.gov/gene/?term=LOC112938214 NA
+LOC107278422 https://www.ncbi.nlm.nih.gov/gene/?term=LOC107278422 NA
+LOC107278150 https://www.ncbi.nlm.nih.gov/gene/?term=LOC107278150 NA
+LOC107277455 https://www.ncbi.nlm.nih.gov/gene/?term=LOC107277455 NA
